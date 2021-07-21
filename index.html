@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+  <!-- HEAD -->
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content= "Artista visual, especializado en el arte con papel. Docente con amplia experiencia.">
+<meta name="keywords" content="Artista, papel, popup, origami, calados, arte, docencia, obras, plastico">
+    <title>Julian Bleker</title>
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- Estilo CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <!-- BODY: header - main - section - footer -->
+  <body class="bodyClass">
+    <!-- HEADER: aside:lista-Links-RedesSociales / section: logo-nombre / nav: lista-Links-páginas -->
+    <header class="headerClass ">
+      <aside>
+        <ul>
+          <li>
+            <a href="https://www.facebook.com/jbleker/">
+              <img src="./Media/Redes/facebook-30px.png" alt="facebook"
+            /></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/julian.bleker/"
+              ><img src="./Media/Redes/instagram-30px.png" alt="instagram"
+            /></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/julian-bleker/"
+              ><img src="./Media/Redes/linkedin-30px.png" alt="linkedin"
+            /></a>
+          </li>
+          <li>
+            <a href="mailto:julianbleker90@gmail.com"
+              ><img src="./Media/Redes/mail-30px.png" alt="e-mail"
+            /></a>
+          </li>
+        </ul>
+      </aside>
+
+      <div class="icon">
+        <div class="headerClass__logo">
+          <a href="index.html">
+            <img src="./Media/sellobleker-80px.png" alt="julian-bleker" />
+          </a>
+          <h1>Julián Bleker</h1>
+        </div>
+
+        <div class="navbar navbar-expand-md navbar-light ">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse"
+            aria-controls="navbarCollapse"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <nav
+            class="
+              headerClass__nav
+              collapse
+              navbar-collapse
+              row
+              justify-content-md-around justify-content-lg-around
+            "
+            id="navbarCollapse"
+          >
+            <ul class="headerClass__nav--ul navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="index.html"> INICIO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="obras.html"> OBRAS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="trayectoriaSass.html">
+                  TRAYECTORIA</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="contacto.html">CONTACTO</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+    </header>
+    <!-- DIV total de la pagina -->
+    <div class="divClassIndex">
+      <!--  MAIN: titulo - fotoPerfil  -->
+      <main class="divClassIndex__main">
+        <section>
+          <h2>Julian Bleker - Artista Visual</h2>
+          <p>
+            Soy profesor en Artes Visuales desde el 2010; con experiencia en los
+            niveles primario, secundario y terciario. Me dedico al estudio y
+            análisis de las nuevas tendencias en el mundo de las artes visuales.
+            Estoy en constante actualización tanto en la teoría como en la
+            práctica. Como artista me especializo en técnicas afines al papel,
+            he expuesto obras en diversas partes del país, así como en ferias
+            internacionales.
+          </p>
+        </section>
+
+        <img class="divClassIndex__main--foto" src="./Media/a-index/FotoPerfil.jpg" alt="fotoPerfil" />
+      </main>
+      <!-- Section Aside: tecnicas - ARTICLE: video  -->
+      <section>
+        <!-- Carrousel Bootstrap -->
+        <!-- <aside>
+          <img src="./Media/e-tecnicas/calado-400px.jpg" alt="calado" />
+          <img src="./Media/e-tecnicas/popup-400px.jpg" alt="popup" />
+          <img src="./Media/e-tecnicas/origami-400px.jpg" alt="origami" />
+        </aside> -->
+<aside class="divClassIndex__aside container-fluid">
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./Media/e-tecnicas/calado-400px.jpg" class="d-block w-100" alt="calado">
+      </div>
+      <div class="carousel-item">
+        <img src="./Media/e-tecnicas/popup-400px.jpg" class="d-block w-100" alt="popup">
+      </div>
+      <div class="carousel-item">
+        <img src="./Media/e-tecnicas/origami-400px.jpg" class="d-block w-100" alt="origami">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</aside>
+  
+
+
+        <article class="divClassIndex__article container-fluid">
+          <h2>El arte de trabajar en papel</h2>
+          <h3>~Clases para todas las edades~</h3>
+          <iframe class="container-fluid"
+            src="https://www.youtube.com/embed/I_6KnL8DT90"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </article>
+      </section>
+
+      <!-- Section Formulario: Contacto -->
+      <section class="seccionContactoIndex">
+        <form action="#">
+          <fieldset>
+            <input type="text" name="nombre" placeholder="Nombre y Apellido" />
+            <input type="email" name="email" placeholder="e-mail" />
+            <label for="consulta">Escriba su consulta</label>
+            <textarea name="consulta" id="#"></textarea>
+            <input
+              class="btn btn-primary border-5"
+              type="submit"
+              value="Enviar"
+            />
+          </fieldset>
+        </form>
+      </section>
+    </div>
+    <!-- FOOTER: aside:audio - epigrafe / texto:copyright -->
+    <footer class="footerClass">
+      <aside>
+        <audio src="./Media/bensound-hipjazz.mp3" controls>
+          www.bensound.com
+        </audio>
+      </aside>
+      <h5>ArteBleker - Todos los derechos reservados - Copyright©</h5>
+    </footer>
+
+    <!-- SCRIPT  -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

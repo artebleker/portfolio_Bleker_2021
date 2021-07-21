@@ -1,0 +1,75 @@
+.sectionCV {
+  display: grid;
+  grid-template-areas:
+    ". cvT ."
+    ". cvI ."
+    ". cvL .";
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-row-gap: 10px;
+}
+.sectionCV__titulo {
+  justify-self: center;
+  grid-area: cvT;
+}
+
+.sectionCV__img {
+  justify-self: center;
+  grid-area: cvI;
+}
+
+.sectionCV__lista {
+  justify-self: center;
+  grid-area: cvL;
+  li {
+    list-style: disc;
+  }
+}
+
+.sectionExpo {
+  display: grid;
+  grid-template-areas:
+    ". expoT ."
+    ". expoI ."
+    ". expoL .";
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-row-gap: 10px;
+}
+
+.sectionExpo__titulo {
+  justify-self: center;
+  grid-area: expoT;
+}
+
+.sectionExpo__img {
+  justify-self: center;
+  grid-area: expoI;
+}
+.sectionExpo__lista {
+  justify-self: center;
+  grid-area: expoL;
+}
+
+// RESPONSIVE
+@media only screen and (min-width: 768px) {
+  .sectionCV {
+    margin: 40px 15%;
+    display: grid;
+    grid-template-areas:
+      " cvT cvT "
+      "cvI  cvL ";
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+  }
+
+  .sectionExpo {
+    margin: 40px 15%;
+    display: grid;
+    grid-template-areas:
+      " expoT expoT"
+      " expoL expoI";
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+  }
+}

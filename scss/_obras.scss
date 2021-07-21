@@ -1,0 +1,76 @@
+// Aplicando variables, operaciones, mixin, each y for
+
+$altura: 500px;
+$ancho: 332px;
+
+@mixin dimensiones($altura, $ancho) {
+  height: $altura * 0.8;
+  width: $ancho / 1.2;
+}
+
+@each $obra in 1, 2, 3, 4, 5, 6 {
+  #item#{$obra} {
+    background-image: url("../Media/b-obras/#{$obra}.jpg");
+    background-position: center center;
+    background-size: cover;
+    @include dimensiones($altura, $ancho);
+  }
+}
+
+@for $i from 1 to 7 {
+  #item#{$i} {
+    grid-area: "#{$i}";
+    margin-top: 2.5vh;
+    margin-bottom: 2.5vh;
+  }
+}
+
+.divClassObras {
+  margin-top: 2.5vh;
+  margin-bottom: 2.5vh;
+  display: grid;
+  grid-template-areas:
+    "1"
+    "2"
+    "3"
+    "4"
+    "5"
+    "6";
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  grid-column-gap: 7px;
+}
+
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  .divClassObras {
+    margin-top: 2.5vh;
+    margin-bottom: 2.5vh;
+    display: grid;
+    grid-template-areas:
+      "1 2"
+      "3 4"
+      "5 6";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-content: space-around;
+    grid-column-gap: 10px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  @mixin dimensiones($altura, $ancho) {
+    height: $altura;
+    width: $ancho;
+  }
+  .divClassObras {
+    grid-template-areas:
+      "1 2 3"
+      "4 5 6";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin-left: 33vh;
+    margin-right: 33vh;
+    grid-column-gap: 20px;
+  }
+}

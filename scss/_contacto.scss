@@ -1,0 +1,72 @@
+
+.sectionContacto {
+  form {
+       fieldset {
+      display: flex;
+      flex-direction: column;
+      
+      padding: 20px;
+      border: none;
+      label{
+        padding: 7px 3px 7px 3px;
+        font-weight: bold;
+         width: max-content;
+      }
+      input {
+        width: max-content;
+        margin: 0.7vh;
+        padding: 0.5vh;
+      }
+      textarea {
+        height: 50vh;
+        width: 50vh;
+      }
+    }
+  }
+}
+
+.sectionContacto__fondoContacto{
+  background: url(../Media/Fondos/calado-libro.jpg);
+  background-size: cover;
+  background-position: center center;
+  form {
+    background-color: rgba(245, 220, 230, 0.577);
+    
+      label{ 
+        background-color:rgba(245, 220, 230, 0.577) ;  
+      }
+    }
+  }
+
+
+.divImagenes {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+}
+
+@media only screen and (min-width: 768px) {
+  .sectionContacto {
+    padding: 15vh 33% 15vh 33%;
+    form {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      width: 100vh;
+      fieldset {
+        
+        width: 50vh;
+
+        textarea {
+          height: 35vh;
+          width: 90vh;
+        }
+      }
+    }
+  }
+  .divImagenes {
+    flex-direction: row;
+  }
+}

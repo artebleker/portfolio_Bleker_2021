@@ -1,0 +1,139 @@
+@import "text";
+@import "index";
+@import "obras";
+@import "trayectoria";
+@import "contacto";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+// VARIABLES
+
+$colorFila: rgb(97, 77, 77);
+$colorHeader: rgb(202, 203, 218);
+$colorFondo: rgb(221, 233, 227);
+
+.bodyClass {
+  background-color: $colorFondo;
+}
+
+/* HEADER & FOOTER */
+.headerClass {
+  background-image: linear-gradient(to right bottom, rgba(184, 189, 252, 0.7), rgba(108, 113, 175, 0.7)) ;
+  background-color: $colorHeader;
+  aside {
+    padding: 5px 0px 3px;
+    display: flex;
+    background-color: $colorFila;
+    justify-content: flex-end;
+
+    ul {
+      display: flex;
+      flex-direction: row;
+
+      li {
+        list-style: none;
+
+        a {
+          padding: 3px;
+        }
+      }
+    }
+  }
+}
+
+.headerClass__logo,
+.headerClass__logo a,
+.headerClass__nav ul {
+  display: flex;
+  flex-direction: row;
+  padding: 4px;
+  align-items: center;
+}
+
+.headerClass__nav--ul {
+  justify-content: space-around;
+  li {
+    list-style: none;
+    a {
+      text-decoration: none;
+      transition: all 0.8s;
+    }
+  }
+}
+.headerClass__nav--ul li a:hover{
+  font-size: 105%;
+  color: rgb(255, 255, 255) !important;
+  text-shadow: 2px 1px rgb(56, 55, 55);
+  
+}
+
+// Animacion header - (copiado, pero modificado)
+
+ .icon {
+  position: relative;
+  overflow: hidden;
+ 
+}
+
+.icon:nth-child(1) { background: $colorHeader; }
+
+.icon:after {
+  content: "";
+  position: absolute;
+  top: -110%;
+  left: -210%;
+  width: 200%;
+  height: 200%;
+  opacity: 0;
+  transform: rotate(30deg);
+  
+  background: rgba(255, 255, 255, 0.13);
+  background: linear-gradient(
+    to right, 
+    rgba(255, 255, 255, 0.13) 0%,
+    rgba(255, 255, 255, 0.13) 77%,
+    rgba(255, 255, 255, 0.4) 92%,
+    rgba(255, 255, 255, 0.0) 100%
+  );
+}
+
+.icon:hover:after {
+  opacity: 1;
+  top: -30%;
+  left: 50%;
+  transition-property: left, top, opacity;
+  transition-duration: 1.5s, 1.5s, 1s;
+  transition-timing-function: ease-in-out;
+}
+
+.icon:active:after {
+  opacity: 0;
+}
+
+
+/* Footer*/
+
+.footerClass {
+  padding: 12px;
+  background-color: $colorFila;
+  display: flex;
+  flex-direction: column;
+}
+
+@media only screen and (max-width: 768px) {
+  .headerClass {
+    div {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
+  .headerClass__nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

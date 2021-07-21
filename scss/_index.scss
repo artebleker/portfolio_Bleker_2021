@@ -1,0 +1,61 @@
+.divClassIndex {
+  display: flex;
+  flex-direction: column;
+}
+
+.divClassIndex__main {
+  text-align: center;
+  margin: 5vh 20px 7vh 20px;
+}
+
+.divClassIndex__main--foto {
+  width: 200px;
+  height: 200px;
+}
+$alturaTecnicas: 400px;
+$anchoTecnicas: 533px;
+
+@mixin dimensionesTecnicas($alturaTecnicas, $anchoTecnicas) {
+  height: $alturaTecnicas;
+  width: $anchoTecnicas;
+}
+
+.divClassIndex__aside {
+  @include dimensionesTecnicas($alturaTecnicas * 0.6, $anchoTecnicas * 0.6);
+}
+
+.divClassIndex__article {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 2vh 7px 2vh 7px;
+  iframe {
+    margin-top: 2vh;
+    height: 240px;
+    width: 426px;
+  }
+}
+
+// Extend desde "_contacto"
+.seccionContactoIndex {
+  @extend .sectionContacto;
+}
+
+@media only screen and (min-width: 768px) {
+  .divClassIndex__aside {
+    @include dimensionesTecnicas($alturaTecnicas * 1.3, $anchoTecnicas * 1.3);
+  }
+
+  .divClassIndex__article {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 2vh 20px 2vh 20px;
+    iframe {
+      margin-top: 2vh;
+      height: 480px;
+      width: 854px;
+    }
+  }
+
+}
