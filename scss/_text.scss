@@ -54,21 +54,11 @@ p {
   html{
     font-size: 110%;
   }
+}
 
-  // h1{
-  //   font-size: 36pt;
-  // }
-  
-  // ol, label {
-  //   font-size: 13pt;
-  // }
-  // li, input {
-  //   font-size: 11pt;
-  // }
-
-  // a{
-  //     font-size: 14pt;
-  // }
-
+@media only screen and (max-width: 768px){
+nav div ul li a{
+  font-size: 2rem;
+}
 }
 
