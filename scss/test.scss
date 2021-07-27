@@ -54,9 +54,10 @@ $colorFondo: rgb(221, 233, 227);
   align-items: center;
 }
 .headerClass__logo{
-  padding-left: 30px;
+  padding-left: 15px;
+  flex-wrap: nowrap;
   h1{
-    padding-left: 20px;
+    padding-left: 5px;
   }
 }
 
@@ -157,6 +158,11 @@ $colorFondo: rgb(221, 233, 227);
     left: 110%;
     transition-duration: 1.5s, 1.5s, 1s;
  
+  }
+  .footerClass {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
   }
 
 }

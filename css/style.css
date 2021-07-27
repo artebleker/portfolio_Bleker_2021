@@ -201,6 +201,7 @@ p {
     grid-column-gap: 20px; } }
 
 .sectionCV {
+  margin-top: 32px;
   display: grid;
   grid-template-areas: ". cvT ." ". cvI ." ". cvL .";
   grid-template-columns: 1fr 1fr 1fr;
@@ -221,6 +222,8 @@ p {
     list-style: disc; }
 
 .sectionExpo {
+  margin-top: 20px;
+  margin-bottom: 20px;
   display: grid;
   grid-template-areas: ". expoT ." ". expoI ." ". expoL .";
   grid-template-columns: 1fr 1fr 1fr;
@@ -337,9 +340,10 @@ p {
   align-items: center; }
 
 .headerClass__logo {
-  padding-left: 30px; }
+  padding-left: 15px;
+  flex-wrap: nowrap; }
   .headerClass__logo h1 {
-    padding-left: 20px; }
+    padding-left: 5px; }
 
 .headerClass__nav--ul {
   justify-content: space-around; }
@@ -407,4 +411,8 @@ p {
   .icon:hover:after {
     top: -30%;
     left: 110%;
-    transition-duration: 1.5s, 1.5s, 1s; } }
+    transition-duration: 1.5s, 1.5s, 1s; }
+  .footerClass {
+    align-items: center;
+    justify-content: center;
+    text-align: center; } }

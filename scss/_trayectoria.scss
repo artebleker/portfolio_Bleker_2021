@@ -1,4 +1,5 @@
 .sectionCV {
+  margin-top: 32px;
   display: grid;
   grid-template-areas:
     ". cvT ."
@@ -26,6 +27,8 @@
 }
 
 .sectionExpo {
+  margin-top: 20px;
+  margin-bottom: 20px;
   display: grid;
   grid-template-areas:
     ". expoT ."
