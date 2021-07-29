@@ -1,0 +1,150 @@
+$size: 230px;
+
+.bodyuno {
+  margin: 0;
+
+
+img, div {
+  width: $size;
+  height: $size;
+}
+
+.x {
+  animation: x 13s linear infinite alternate;
+  position: absolute;
+}
+
+.y {
+  animation: y 7s linear infinite alternate;
+  position: absolute;
+}
+
+@keyframes x {
+  100% {
+    transform: translateX( calc(100vw - #{$size}) );
+  }
+}
+
+@keyframes y {
+  100% {
+    transform: translateY( calc(100vh - #{$size}) );
+  }
+}
+
+.a {
+    animation: x 4s linear infinite alternate;
+    position: absolute;
+  }
+  
+  .b {
+    animation: y 17s linear infinite alternate;
+    position: absolute;
+  }
+  
+  @keyframes a {
+    100% {
+      transform: translateX( calc(100vw - #{$size}) );
+    }
+  }
+  
+  @keyframes b {
+    100% {
+      transform: translateY( calc(100vh - #{$size}) );
+    }
+  }
+
+  .c {
+    animation: x 7s linear infinite alternate;
+    position: absolute;
+  }
+  
+  .d {
+    animation: y 7s linear infinite alternate;
+    position: absolute;
+  }
+  
+  @keyframes c {
+    100% {
+      transform: translateX( calc(100vw - #{$size}) );
+    }
+  }
+  
+  @keyframes d {
+    100% {
+      transform: translateY( calc(100vh - #{$size}) );
+    }
+  }
+
+  .e {
+    animation: x 3s linear infinite alternate;
+    position: absolute;
+  }
+  
+  .f {
+    animation: y 10s linear infinite alternate;
+    position: absolute;
+  }
+  
+  @keyframes e {
+    100% {
+      transform: translateX( calc(100vw - #{$size}) );
+    }
+  }
+  
+  @keyframes f {
+    100% {
+      transform: translateY( calc(100vh - #{$size}) );
+    }
+  }
+
+  .g {
+    animation: x 8s linear infinite alternate;
+    position: absolute;
+  }
+  
+  .h {
+    animation: y 15s linear infinite alternate;
+    position: absolute;
+  }
+  
+  @keyframes g {
+    100% {
+      transform: translateX( calc(100vw - #{$size}) );
+    }
+  }
+  
+  @keyframes h {
+    100% {
+      transform: translateY( calc(100vh - #{$size}) );
+    }
+  }
+
+.error{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 50pt;
+    font-weight: bolder;
+    background-image: radial-gradient(
+      
+    rgba(255, 255, 255, 0.853),
+    rgba(102, 105, 122, 0.582),
+    rgba(6, 6, 148, 0.603),
+    rgba(6, 70, 30, 0.6)
+    );
+}
+}
+
+  @media only screen and (max-width: 768px){
+    $size: 100px;
+    .error{
+      font-size: 30pt;
+      align-items: flex-start;
+      padding-top: 20px;
+    }
+  }

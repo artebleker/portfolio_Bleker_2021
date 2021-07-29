@@ -57,46 +57,58 @@ $anchoTecnicas: 533px;
 }
 
 @media only screen and (min-width: 768px) {
-
+  
   .divClassIndex__main{
     display: flex;
-flex-direction: row;
-margin: 20vh 30vh 25vh 30vh;
+    flex-direction: row;
+    margin: 20vh 30vh 25vh 30vh;
   }
   .divClassIndex__main--foto {
-margin-left: 35px;
+    margin-left: 35px;
   }
-.fondoTecnicas{
-  
-  background-image: linear-gradient(to right, 
-  rgba(0,0,0,0)1%,
-   rgba(97, 77, 77, 0.4)10%,
-     rgb(97, 77, 77),
-    rgba(97, 77, 77,0.4)10%,
-      rgba(0,0,0,0)1%),
-      inear-gradient(to bottom, 
-  rgba(0,0,0,0)1%,
-   rgba(97, 77, 77, 0.4) 10%,
-     rgb(97, 77, 77),
-    rgba(97, 77, 77,0.4)10%,
-      rgba(0,0,0,0)1%);
+  .fondoTecnicas{
+    // 202, 203, 218
+    // 97, 77, 77
+    background-image:
+    radial-gradient(
+      rgba(97,77,77, 0.95),
+      rgba(97, 77, 77, 0.85),
+      rgba(255, 255, 255, 0.1),
+      rgba(255, 255, 255, 0.01)
+      ),
+      linear-gradient(to bottom, 
+      rgba(255, 255, 255, 0.01),
+      rgba(255, 255, 255, 0.2),
+      rgba(97, 77, 77, 0.1),
+      rgba(202, 203, 218, 0.7),
+      rgba(97, 77, 77,0.1),
+      rgba(255, 255, 255, 0.2),
+      rgba(255, 255, 255, 0.01)
+      );
       padding-top: 3vh;
-      
-}
-  .divClassIndex__aside {
-    @include dimensionesTecnicas($alturaTecnicas * 1.4, $anchoTecnicas * 1.4);
-  }
-
-  .divClassIndex__article {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding: 2vh 20px 2vh 20px;
-    iframe {
-      padding-top: 2vh;
-      height: 480px;
-      width: 854px;
+      width: 100%;
     }
+    
+    .divClassIndex__aside {
+      @include dimensionesTecnicas($alturaTecnicas * 1.4, $anchoTecnicas * 1.4);
+    }
+    
+    .divClassIndex__article {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      padding: 2vh 20px 2vh 20px;
+      iframe {
+        padding-top: 2vh;
+        height: 480px;
+        width: 854px;
+      }
+    }
+    
   }
-
-}
+  @media only screen and (max-width: 768px){
+  .divClassIndex__aside--sombra{
+   box-shadow: 
+   0px 0px  12px  6px rgba(0, 0, 0, 0.2),
+   0px 0px 12px  10px rgba(97,77,77,0.5);
+  }}
