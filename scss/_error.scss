@@ -128,23 +128,22 @@ img, div {
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-size: 50pt;
-    font-weight: bolder;
     background-image: radial-gradient(
-      
-    rgba(255, 255, 255, 0.853),
-    rgba(102, 105, 122, 0.582),
-    rgba(6, 6, 148, 0.603),
-    rgba(6, 70, 30, 0.6)
-    );
+      rgba(255, 255, 255, 0.853),
+      rgba(102, 105, 122, 0.582),
+      rgba(6, 6, 148, 0.603),
+      rgba(6, 70, 30, 0.6)
+      );
+      h2{
+      font-size: 24pt;
+      font-family: 'Press Start 2P', cursive;}
 }
 }
 
   @media only screen and (max-width: 768px){
     $size: 100px;
     .error{
-      font-size: 30pt;
-      align-items: flex-start;
+      font-size: 9pt;
       padding-top: 20px;
     }
   }

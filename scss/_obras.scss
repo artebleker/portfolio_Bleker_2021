@@ -40,6 +40,10 @@ $ancho: 332px;
   grid-template-columns: 1fr;
   justify-items: center;
   grid-column-gap: 7px;
+
+  div{
+    box-shadow: 0px 0px 10px 3px rgba(125, 126, 129, 0.555);
+  }
 }
 
 @media only screen and (min-width: 600px) and (max-width: 768px) {

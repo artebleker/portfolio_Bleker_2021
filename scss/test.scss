@@ -17,6 +17,7 @@ $colorHeader: rgb(202, 203, 218);
 $colorFondo: rgb(221, 233, 227);
 
 .bodyClass {
+  background-image: linear-gradient(to right bottom, rgba(255, 254, 254, 0.429),rgba(255, 255, 255, 0),rgba(120, 122, 156, 0.497));
   background-color: $colorFondo;
 }
 
@@ -70,7 +71,8 @@ $colorFondo: rgb(221, 233, 227);
     a {
       text-decoration: none;
       transition: all 0.8s;
-    }
+      text-shadow: -1.1px -1.1px 0px rgba(0,0,0,0.7);
+     }
   }
 }
 .headerClass__nav--ul li a:hover{
