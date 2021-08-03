@@ -10,8 +10,8 @@
   rgba(255, 255, 255, 0.014), 
   rgba(255, 255, 255, 0.534), 
   rgba(255, 255, 255, 0.118), 
-  rgba(255, 255, 255, 0)) 
-  ,url(../media/Fondos/dodecaedro-calado.jpg);
+  rgba(255, 255, 255, 0)) ;
+  background-image: url(../media/Fondos/dodecaedro-calado.jpg);
   opacity: 80%;
   background-size: cover;
   background-position: center center;
@@ -26,6 +26,7 @@
 .divClassIndex__main--foto {
   width: 200px;
   height: 200px;
+  box-shadow: 0px 0px 10px 3px rgba(125, 126, 129, 0.555);
 }
 $alturaTecnicas: 400px;
 $anchoTecnicas: 533px;
@@ -50,6 +51,7 @@ $anchoTecnicas: 533px;
     width: 213px *1.6;
   }
 }
+
 
 // Extend desde "_contacto"
 .seccionContactoIndex {
@@ -89,23 +91,26 @@ $anchoTecnicas: 533px;
       width: 100%;
     }
     
+    
     .divClassIndex__aside {
       @include dimensionesTecnicas($alturaTecnicas * 1.4, $anchoTecnicas * 1.4);
     }
     
-    .divClassIndex__article {
-      display: flex;
-      flex-direction: column;
-      text-align: center;
-      padding: 2vh 20px 2vh 20px;
-      iframe {
-        padding-top: 2vh;
-        height: 480px;
-        width: 854px;
-      }
-    }
     
   }
+  @media only screen and (min-width: 945px) {
+  .divClassIndex__article {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 2vh 20px 2vh 20px;
+    iframe {
+      padding-top: 2vh;
+      height: 480px;
+      width: 854px;
+    }
+  }
+}
   @media only screen and (max-width: 768px){
   .divClassIndex__aside--sombra{
    box-shadow: 

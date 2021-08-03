@@ -51,7 +51,8 @@ p {
 .divClassIndex {
   display: flex;
   flex-direction: column;
-  background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0.23), rgba(255, 255, 255, 0.856), rgba(255, 255, 255, 0.318), rgba(255, 255, 255, 0)), linear-gradient(to bottom, rgba(255, 255, 255, 0.014), rgba(255, 255, 255, 0.534), rgba(255, 255, 255, 0.118), rgba(255, 255, 255, 0)), url(../media/Fondos/dodecaedro-calado.jpg);
+  background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0.23), rgba(255, 255, 255, 0.856), rgba(255, 255, 255, 0.318), rgba(255, 255, 255, 0)), linear-gradient(to bottom, rgba(255, 255, 255, 0.014), rgba(255, 255, 255, 0.534), rgba(255, 255, 255, 0.118), rgba(255, 255, 255, 0));
+  background-image: url(../media/Fondos/dodecaedro-calado.jpg);
   opacity: 80%;
   background-size: cover;
   background-position: center center; }
@@ -62,7 +63,8 @@ p {
 
 .divClassIndex__main--foto {
   width: 200px;
-  height: 200px; }
+  height: 200px;
+  box-shadow: 0px 0px 10px 3px rgba(125, 126, 129, 0.555); }
 
 .divClassIndex__aside {
   height: 240px;
@@ -91,7 +93,9 @@ p {
     width: 100%; }
   .divClassIndex__aside {
     height: 560px;
-    width: 746.2px; }
+    width: 746.2px; } }
+
+@media only screen and (min-width: 945px) {
   .divClassIndex__article {
     display: flex;
     flex-direction: column;
@@ -190,7 +194,7 @@ p {
   .divClassObras div {
     box-shadow: 0px 0px 10px 3px rgba(125, 126, 129, 0.555); }
 
-@media only screen and (min-width: 600px) and (max-width: 768px) {
+@media only screen and (min-width: 600px) and (max-width: 1075px) {
   .divClassObras {
     margin-top: 2.5vh;
     margin-bottom: 2.5vh;
@@ -201,7 +205,7 @@ p {
     justify-content: space-around;
     grid-column-gap: 10px; } }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1075px) {
   .divClassObras {
     grid-template-areas: "1 2 3" "4 5 6";
     grid-template-columns: 1fr 1fr 1fr;
@@ -223,7 +227,8 @@ p {
 
 .sectionCV__img {
   justify-self: center;
-  grid-area: cvI; }
+  grid-area: cvI;
+  box-shadow: 0px 0px 10px 3px rgba(125, 126, 129, 0.555); }
 
 .sectionCV__lista {
   justify-self: center;
@@ -245,7 +250,8 @@ p {
 
 .sectionExpo__img {
   justify-self: center;
-  grid-area: expoI; }
+  grid-area: expoI;
+  box-shadow: 0px 0px 10px 3px rgba(125, 126, 129, 0.555); }
 
 .sectionExpo__lista {
   justify-self: center;
@@ -300,7 +306,7 @@ p {
   margin-top: 3vh;
   margin-bottom: 3vh; }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1000px) {
   .sectionContacto, .seccionContactoIndex {
     padding: 15vh 33% 15vh 33%; }
     .sectionContacto form, .seccionContactoIndex form {
@@ -314,7 +320,10 @@ p {
           height: 35vh;
           width: 90vh; }
   .divImagenes {
-    flex-direction: row; } }
+    flex-direction: row;
+    flex-wrap: wrap; }
+    .divImagenes img {
+      margin-top: 14px; } }
 
 .bodyuno {
   margin: 0; }
@@ -522,3 +531,7 @@ p {
     align-items: center;
     justify-content: center;
     text-align: center; } }
+
+@media only screen and (min-width: 768px) and (max-width: 900px) {
+  .nav-link {
+    font-size: 80% !important; } }

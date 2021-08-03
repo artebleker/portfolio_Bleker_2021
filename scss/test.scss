@@ -169,3 +169,9 @@ $colorFondo: rgb(221, 233, 227);
   }
 
 }
+
+@media only screen and (min-width:768px) and (max-width:900px){
+  .nav-link{
+font-size: 80% !important;
+  }
+}

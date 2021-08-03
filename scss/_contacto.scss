@@ -47,7 +47,12 @@
   margin-bottom: 3vh;
 }
 
-@media only screen and (min-width: 768px) {
+
+
+
+
+
+@media only screen and (min-width: 1000px) {
   .sectionContacto {
     padding: 15vh 33% 15vh 33%;
     form {
@@ -68,5 +73,9 @@
   }
   .divImagenes {
     flex-direction: row;
+    flex-wrap: wrap;
+    img{
+     margin-top:14px;
+    }
   }
 }

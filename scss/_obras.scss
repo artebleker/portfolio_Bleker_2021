@@ -46,7 +46,7 @@ $ancho: 332px;
   }
 }
 
-@media only screen and (min-width: 600px) and (max-width: 768px) {
+@media only screen and (min-width: 600px) and (max-width: 1075px) {
   .divClassObras {
     margin-top: 2.5vh;
     margin-bottom: 2.5vh;
@@ -62,11 +62,9 @@ $ancho: 332px;
   }
 }
 
-@media only screen and (min-width: 768px) {
-  @mixin dimensiones($altura, $ancho) {
-    height: $altura;
-    width: $ancho;
-  }
+
+@media only screen and (min-width: 1075px) {
+ 
   .divClassObras {
     grid-template-areas:
       "1 2 3"
