@@ -51,9 +51,7 @@ p {
 .divClassIndex {
   display: flex;
   flex-direction: column;
-  background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0.23), rgba(255, 255, 255, 0.856), rgba(255, 255, 255, 0.318), rgba(255, 255, 255, 0)), linear-gradient(to bottom, rgba(255, 255, 255, 0.014), rgba(255, 255, 255, 0.534), rgba(255, 255, 255, 0.118), rgba(255, 255, 255, 0));
-  background-image: url(../media/Fondos/dodecaedro-calado.jpg);
-  opacity: 80%;
+  background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0.23), rgba(255, 255, 255, 0.856), rgba(255, 255, 255, 0.318), rgba(255, 255, 255, 0)), linear-gradient(to bottom, rgba(255, 255, 255, 0.014), rgba(255, 255, 255, 0.534), rgba(255, 255, 255, 0.118), rgba(255, 255, 255, 0)), url(../Media/Fondos/papeles.jpg);
   background-size: cover;
   background-position: center center; }
 
@@ -228,7 +226,8 @@ p {
 .sectionCV__img {
   justify-self: center;
   grid-area: cvI;
-  box-shadow: 0px 0px 10px 3px rgba(125, 126, 129, 0.555); }
+  box-shadow: 0px 0px 10px 3px rgba(125, 126, 129, 0.555);
+  width: 275px; }
 
 .sectionCV__lista {
   justify-self: center;
@@ -251,7 +250,8 @@ p {
 .sectionExpo__img {
   justify-self: center;
   grid-area: expoI;
-  box-shadow: 0px 0px 10px 3px rgba(125, 126, 129, 0.555); }
+  box-shadow: 0px 0px 10px 3px rgba(125, 126, 129, 0.555);
+  width: 275px; }
 
 .sectionExpo__lista {
   justify-self: center;
