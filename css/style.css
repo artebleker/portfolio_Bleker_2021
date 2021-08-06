@@ -81,8 +81,6 @@ p {
     background-size: cover;
     background-position: center center; }
   .divClassIndex__main {
-    display: flex;
-    flex-direction: row;
     margin: 20vh 30vh 25vh 30vh; }
   .divClassIndex__main--foto {
     margin-left: 35px; }
@@ -104,6 +102,11 @@ p {
       padding-top: 2vh;
       height: 480px;
       width: 854px; } }
+
+@media only screen and (min-width: 1000px) {
+  .divClassIndex__main {
+    display: flex;
+    flex-direction: row; } }
 
 @media only screen and (max-width: 768px) {
   .divClassIndex__aside--sombra {
@@ -258,7 +261,13 @@ p {
   justify-self: center;
   grid-area: expoL; }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1070px) {
+  .sectionCV .sectionCV__lista {
+    width: 100vh;
+    margin: 0%;
+    padding: 0%; } }
+
+@media only screen and (min-width: 1070px) {
   .sectionCV {
     margin: 40px 15%;
     display: grid;
@@ -293,14 +302,10 @@ p {
     height: 50vh;
     width: 50vh; }
 
-.sectionContacto__fondoContacto {
-  background: url(../Media/Fondos/calado-libro.jpg);
-  background-size: cover;
-  background-position: center center; }
-  .sectionContacto__fondoContacto form {
+.sectionContacto__fondoContacto form {
+  background-color: rgba(245, 220, 230, 0.577); }
+  .sectionContacto__fondoContacto form label {
     background-color: rgba(245, 220, 230, 0.577); }
-    .sectionContacto__fondoContacto form label {
-      background-color: rgba(245, 220, 230, 0.577); }
 
 .divImagenes {
   display: flex;
@@ -308,6 +313,12 @@ p {
   justify-content: space-around;
   margin-top: 3vh;
   margin-bottom: 3vh; }
+
+@media only screen and (min-width: 1000px) {
+  .sectionContacto__fondoContacto {
+    background: url(../Media/Fondos/caladolibro.jpg);
+    background-size: cover;
+    background-position: center center; } }
 
 @media only screen and (min-width: 1000px) {
   .sectionContacto, .seccionContactoIndex {
@@ -434,7 +445,8 @@ p {
 .headerClass {
   background-image: linear-gradient(to right bottom, rgba(184, 189, 252, 0.7), rgba(108, 113, 175, 0.7));
   background-color: #cacbda;
-  box-shadow: 0px 0px 15px 0px #614d4d; }
+  box-shadow: 0px 0px 15px 0px #614d4d;
+  position: relative; }
   .headerClass aside {
     padding: 5px 0px 3px;
     display: flex;

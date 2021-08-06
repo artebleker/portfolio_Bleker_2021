@@ -58,19 +58,28 @@
 }
 
 // RESPONSIVE
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1070px) {
+  .sectionCV {
+.sectionCV__lista{
+  width: 100vh;
+  margin: 0%;
+  padding: 0%;
+}
+
+  }
+}
+@media only screen and (min-width: 1070px) {
   .sectionCV {
     margin: 40px 15%;
     display: grid;
     grid-template-areas:
-      " cvT cvT "
-      "cvI  cvL ";
+    " cvT cvT "
+    "cvI  cvL ";
     grid-template-columns: 1fr 1fr;
     grid-row-gap: 20px;
     grid-column-gap: 20px;
   }
-
-
+  
   .sectionExpo {
     margin: 40px 15%;
     display: grid;

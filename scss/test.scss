@@ -26,6 +26,7 @@ $colorFondo: rgb(221, 233, 227);
   background-image: linear-gradient(to right bottom, rgba(184, 189, 252, 0.7), rgba(108, 113, 175, 0.7)) ;
   background-color: $colorHeader;
   box-shadow: 0px 0px 15px 0px $colorFila;
+  position: relative;
   aside {
     padding: 5px 0px 3px;
     display: flex;

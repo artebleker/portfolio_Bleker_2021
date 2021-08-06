@@ -26,9 +26,6 @@
 }
 
 .sectionContacto__fondoContacto{
-  background: url(../Media/Fondos/calado-libro.jpg);
-  background-size: cover;
-  background-position: center center;
   form {
     background-color: rgba(245, 220, 230, 0.577);
     
@@ -49,8 +46,13 @@
 
 
 
-
-
+@media only screen and (min-width: 1000px) {
+.sectionContacto__fondoContacto{
+  background: url(../Media/Fondos/caladolibro.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+}
 
 @media only screen and (min-width: 1000px) {
   .sectionContacto {
