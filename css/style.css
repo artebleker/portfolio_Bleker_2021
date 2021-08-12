@@ -154,6 +154,140 @@ p {
   height: 400px;
   width: 276.66667px; }
 
+#itemModal1 {
+  background-image: url("../Media/b-obras/1pe.jpg");
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  background-position: center center;
+  background-size: cover;
+  margin: 17px;
+  height: 400px;
+  width: 416.66667px; }
+
+#itemModal2 {
+  background-image: url("../Media/b-obras/2pe.jpg");
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  background-position: center center;
+  background-size: cover;
+  margin: 17px;
+  height: 400px;
+  width: 416.66667px; }
+
+#itemModal3 {
+  background-image: url("../Media/b-obras/3pe.jpg");
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  background-position: center center;
+  background-size: cover;
+  margin: 17px;
+  height: 400px;
+  width: 416.66667px; }
+
+#itemModal4 {
+  background-image: url("../Media/b-obras/4pe.jpg");
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  background-position: center center;
+  background-size: cover;
+  margin: 17px;
+  height: 400px;
+  width: 416.66667px; }
+
+#itemModal5 {
+  background-image: url("../Media/b-obras/5pe.jpg");
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  background-position: center center;
+  background-size: cover;
+  margin: 17px;
+  height: 400px;
+  width: 416.66667px; }
+
+#itemModal6 {
+  background-image: url("../Media/b-obras/6pe.jpg");
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  background-position: center center;
+  background-size: cover;
+  margin: 17px;
+  height: 400px;
+  width: 416.66667px; }
+
+@media only screen and (max-width: 500px) {
+  #itemModal1 {
+    background-image: url("../Media/b-obras/1pe.jpg");
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    background-position: center center;
+    background-size: cover;
+    margin: 6px;
+    height: 256px;
+    width: 266.66667px; }
+  #itemModal2 {
+    background-image: url("../Media/b-obras/2pe.jpg");
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    background-position: center center;
+    background-size: cover;
+    margin: 6px;
+    height: 256px;
+    width: 266.66667px; }
+  #itemModal3 {
+    background-image: url("../Media/b-obras/3pe.jpg");
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    background-position: center center;
+    background-size: cover;
+    margin: 6px;
+    height: 256px;
+    width: 266.66667px; }
+  #itemModal4 {
+    background-image: url("../Media/b-obras/4pe.jpg");
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    background-position: center center;
+    background-size: cover;
+    margin: 6px;
+    height: 256px;
+    width: 266.66667px; }
+  #itemModal5 {
+    background-image: url("../Media/b-obras/5pe.jpg");
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    background-position: center center;
+    background-size: cover;
+    margin: 6px;
+    height: 256px;
+    width: 266.66667px; }
+  #itemModal6 {
+    background-image: url("../Media/b-obras/6pe.jpg");
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    background-position: center center;
+    background-size: cover;
+    margin: 6px;
+    height: 256px;
+    width: 266.66667px; } }
+
+.closePosition {
+  display: flex;
+  justify-self: flex-end;
+  align-self: flex-end;
+  margin: 10px; }
+
 #item1 {
   grid-area: "1";
   margin-top: 2.5vh;

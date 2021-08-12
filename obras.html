@@ -6,8 +6,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Obras de arte de Julian Bleker. Obras realizadas en papel con diversas técnicas.">
-    <meta name="keywords" content=" obras, arte, papel, visual, popup, origami, calado, plastico">
+    <meta
+      name="description"
+      content="Obras de arte de Julian Bleker. Obras realizadas en papel con diversas técnicas."
+    />
+    <meta
+      name="keywords"
+      content=" obras, arte, papel, visual, popup, origami, calado, plastico"
+    />
     <title>Obras de Arte - Julian Bleker</title>
     <link rel="icon" type="image/gif" href="./Media/selloblekericon.png" />
     <!-- Bootstrap -->
@@ -20,16 +26,18 @@
     <!-- Estilo CSS -->
     <link rel="stylesheet" href="./css/style.css" />
 
-<!-- Google Font -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bellefair&family=Noto+Sans+KR:wght@300&family=Ubuntu&display=swap" rel="stylesheet">
-
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bellefair&family=Noto+Sans+KR:wght@300&family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <!-- BODY: header - main - section - footer -->
   <body class="bodyClass">
     <!-- HEADER: aside:lista-Links-RedesSociales / section: logo-nombre / nav: lista-Links-páginas -->
-    <header class="headerClass ">
+    <header class="headerClass">
       <aside>
         <ul>
           <li>
@@ -57,42 +65,284 @@
 
       <nav class="navbar navbar-expand-md navbar-dark icon">
         <div class="container-fluid headerClass__logo">
-            <a class="navbar-brand" href="./index.html"><img src="./Media/sellobleker-80px.png" alt="julian-bleker">
-                <h1>Julián Bleker</h1></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
-                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse headerClass__nav row" id="navbarCollapse">
-                <ul class="navbar-nav me-auto mb-2 mb-md-0 headerClass__nav--ul">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="index.html"> INICIO</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link active" href="obras.html"> OBRAS</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link active" href="trayectoria.html">
-                          TRAYECTORIA</a
-                        >
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link active" href="contacto.html">CONTACTO</a>
-                      </li>
-                </ul>
-            </div>
+          <a class="navbar-brand" href="./index.html"
+            ><img src="./Media/sellobleker-80px.png" alt="julian-bleker" />
+            <h1>Julián Bleker</h1></a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse"
+            aria-controls="navbarCollapse"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse headerClass__nav row"
+            id="navbarCollapse"
+          >
+            <ul class="navbar-nav me-auto mb-2 mb-md-0 headerClass__nav--ul">
+              <li class="nav-item">
+                <a class="nav-link active" href="index.html"> INICIO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="obras.html"> OBRAS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="trayectoria.html">
+                  TRAYECTORIA</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="contacto.html">CONTACTO</a>
+              </li>
+            </ul>
+          </div>
         </div>
-    </nav>
+      </nav>
     </header>
 
-    <!-- DIV- Grid - Imagenes de las obras => interactivo(?) -->
+    <!-- DIV- Grid - Imagenes de las obras => modal-->
     <div class="divClassObras">
-      <div id="item1"></div>
-      <div id="item2"></div>
+      <!-- Primera obra -->
+      <div
+        type="button"
+        data-bs-toggle="modal"
+        data-bs-target="#staticBackdrop"
+        id="item1"
+      ></div>
+      <div
+        class="modal fade"
+        id="staticBackdrop"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="staticBackdropLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <button
+              type="button"
+              class="btn-close closePosition"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+            <div class="modal-body" id="itemModal1"></div>
+            <div class="modal-body text-center">
+              <p>
+                <b> *En expansión* </b>
+                <br />
+                Técnica de papeles calados y origami
+                <br />
+                2019
+                <br />
+                De la serie <i> "Patabus" </i>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Segunda obra -->
+      <div
+        type="button"
+        data-bs-toggle="modal"
+        data-bs-target="#staticBackdrop2"
+        id="item2"
+      ></div>
+      <div
+        class="modal fade"
+        id="staticBackdrop2"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="staticBackdropLabel2"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <button
+              type="button"
+              class="btn-close closePosition"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+            <div class="modal-body" id="itemModal2"></div>
+            <div class="modal-body text-center">
+              <p>
+                <b> +Se está cayendo+ </b>
+                <br />
+                Técnica de papeles calados y origami
+                <br />
+                2019
+                <br />
+                De la serie <i> "Patabus" </i>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tercera obra -->
+      <div
+        type="button"
+        data-bs-toggle="modal"
+        data-bs-target="#staticBackdrop3"
+        id="item3"
+      ></div>
+      <div
+        class="modal fade"
+        id="staticBackdrop3"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="staticBackdropLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <button
+              type="button"
+              class="btn-close closePosition"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+            <div class="modal-body" id="itemModal3"></div>
+            <div class="modal-body text-center">
+              <p>
+                <b> _Escondidos en el bosque_ </b>
+                <br />
+                Técnica de papeles calados y origami
+                <br />
+                2019
+                <br />
+                De la serie <i> "Patabus" </i>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Cuarta obra -->
+      <div
+        type="button"
+        data-bs-toggle="modal"
+        data-bs-target="#staticBackdrop4"
+        id="item4"
+      ></div>
+      <div
+        class="modal fade"
+        id="staticBackdrop4"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="staticBackdropLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <button
+              type="button"
+              class="btn-close closePosition"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+            <div class="modal-body" id="itemModal4"></div>
+            <div class="modal-body text-center">
+              <p>
+                <b> -Opuestos- </b>
+                <br />
+                Técnica de papeles calados y origami
+                <br />
+                2019
+                <br />
+                De la serie <i> "Patabus" </i>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quinta obra -->
+      <div
+        type="button"
+        data-bs-toggle="modal"
+        data-bs-target="#staticBackdrop5"
+        id="item5"
+      ></div>
+      <div
+        class="modal fade"
+        id="staticBackdrop5"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="staticBackdropLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <button
+              type="button"
+              class="btn-close closePosition"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+            <div class="modal-body" id="itemModal5"></div>
+            <div class="modal-body text-center">
+              <p>
+                <b> :Geisha:</b>
+                <br />
+                Técnica de papeles calados y origami
+                <br />
+                2019
+                <br />
+                De la serie <i> "Patabus" </i>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sexta obra -->
+      <div
+        type="button"
+        data-bs-toggle="modal"
+        data-bs-target="#staticBackdrop6"
+        id="item6"
+      ></div>
+      <div
+        class="modal fade"
+        id="staticBackdrop6"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="staticBackdropLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <button
+              type="button"
+              class="btn-close closePosition"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+            <div class="modal-body" id="itemModal6"></div>
+            <div class="modal-body text-center">
+              <p>
+                <b> =El cambio de camino= </b>
+                <br />
+                Técnica de papeles calados y origami
+                <br />
+                2019
+                <br />
+                De la serie <i> "Patabus" </i>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <div id="item2"></div>
       <div id="item3"></div>
       <div id="item4"></div>
       <div id="item5"></div>
-      <div id="item6"></div>
+      <div id="item6"></div> -->
     </div>
 
     <!-- FOOTER: aside:audio - epigrafe / texto:copyright -->
