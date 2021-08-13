@@ -44,6 +44,8 @@ $anchoTecnicas: 533px;
   @extend .sectionContacto;
 }
 
+
+
 @media only screen and (min-width: 768px) {
   .divClassIndex {
     background-image:linear-gradient(to bottom right, 
@@ -96,6 +98,15 @@ $anchoTecnicas: 533px;
     
     .divClassIndex__aside {
       @include dimensionesTecnicas($alturaTecnicas * 1.4, $anchoTecnicas * 1.4);
+    }
+
+   
+      .divClassIndex__article {
+        iframe {
+          height: 480px*0.8;
+          width: 854px*0.8;
+        }
+      
     }
     
     

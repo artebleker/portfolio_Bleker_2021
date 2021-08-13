@@ -1,5 +1,8 @@
 
 .sectionContacto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   form {
        fieldset {
       display: flex;
@@ -18,8 +21,8 @@
         padding: 0.5vh;
       }
       textarea {
-        height: 50vh;
-        width: 50vh;
+        width: 35vh;
+        height: 20vh;
       }
     }
   }
@@ -44,31 +47,30 @@
   margin-bottom: 3vh;
 }
 
+@media only screen and (min-width: 768px) {
+  .sectionContacto form fieldset textarea{
+    width: 50vh;
+    height: 25vh;
+  }
 
-
-@media only screen and (min-width: 1000px) {
-.sectionContacto__fondoContacto{
-  background: url(../Media/Fondos/caladolibro.jpg);
-  background-size: cover;
-  background-position: center center;
-}
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 945px) {
   .sectionContacto {
-    padding: 15vh 33% 15vh 33%;
+    padding: 15vh 0vh 15vh 0vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     form {
-      display: flex;
       flex-direction: column;
       justify-content: flex-start;
       width: 100vh;
       fieldset {
+        width: 80vh;
         
-        width: 50vh;
-
         textarea {
+          width: 80vh;
           height: 35vh;
-          width: 90vh;
         }
       }
     }
@@ -77,7 +79,21 @@
     flex-direction: row;
     flex-wrap: wrap;
     img{
-     margin-top:14px;
+      margin-top:14px;
     }
   }
+  .sectionContacto__fondoContacto{
+    background: url(../Media/Fondos/caladolibro.jpg);
+    background-size: cover;
+    background-position: center center;
+  
+  }
 }
+
+@media only screen and (min-width: 1215px) {
+  .sectionContacto form fieldset textarea{
+    width: 90vh;
+  }
+
+}
+

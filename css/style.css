@@ -90,7 +90,10 @@ p {
     width: 100%; }
   .divClassIndex__aside {
     height: 560px;
-    width: 746.2px; } }
+    width: 746.2px; }
+  .divClassIndex__article iframe {
+    height: 384px;
+    width: 683.2px; } }
 
 @media only screen and (min-width: 945px) {
   .divClassIndex__article {
@@ -419,22 +422,26 @@ p {
   .sectionCV__img, .sectionExpo__img {
     width: auto; } }
 
-.sectionContacto form fieldset, .seccionContactoIndex form fieldset {
+.sectionContacto, .seccionContactoIndex {
   display: flex;
-  flex-direction: column;
-  padding: 20px;
-  border: none; }
-  .sectionContacto form fieldset label, .seccionContactoIndex form fieldset label {
-    padding: 7px 3px 7px 3px;
-    font-weight: bold;
-    width: max-content; }
-  .sectionContacto form fieldset input, .seccionContactoIndex form fieldset input {
-    width: max-content;
-    margin: 0.7vh;
-    padding: 0.5vh; }
-  .sectionContacto form fieldset textarea, .seccionContactoIndex form fieldset textarea {
-    height: 50vh;
-    width: 50vh; }
+  justify-content: center;
+  align-items: center; }
+  .sectionContacto form fieldset, .seccionContactoIndex form fieldset {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border: none; }
+    .sectionContacto form fieldset label, .seccionContactoIndex form fieldset label {
+      padding: 7px 3px 7px 3px;
+      font-weight: bold;
+      width: max-content; }
+    .sectionContacto form fieldset input, .seccionContactoIndex form fieldset input {
+      width: max-content;
+      margin: 0.7vh;
+      padding: 0.5vh; }
+    .sectionContacto form fieldset textarea, .seccionContactoIndex form fieldset textarea {
+      width: 35vh;
+      height: 20vh; }
 
 .sectionContacto__fondoContacto form {
   background-color: rgba(245, 220, 230, 0.577); }
@@ -448,30 +455,39 @@ p {
   margin-top: 3vh;
   margin-bottom: 3vh; }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 768px) {
+  .sectionContacto form fieldset textarea, .seccionContactoIndex form fieldset textarea {
+    width: 50vh;
+    height: 25vh; } }
+
+@media only screen and (min-width: 945px) {
+  .sectionContacto, .seccionContactoIndex {
+    padding: 15vh 0vh 15vh 0vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .sectionContacto form, .seccionContactoIndex form {
+      flex-direction: column;
+      justify-content: flex-start;
+      width: 100vh; }
+      .sectionContacto form fieldset, .seccionContactoIndex form fieldset {
+        width: 80vh; }
+        .sectionContacto form fieldset textarea, .seccionContactoIndex form fieldset textarea {
+          width: 80vh;
+          height: 35vh; }
+  .divImagenes {
+    flex-direction: row;
+    flex-wrap: wrap; }
+    .divImagenes img {
+      margin-top: 14px; }
   .sectionContacto__fondoContacto {
     background: url(../Media/Fondos/caladolibro.jpg);
     background-size: cover;
     background-position: center center; } }
 
-@media only screen and (min-width: 1000px) {
-  .sectionContacto, .seccionContactoIndex {
-    padding: 15vh 33% 15vh 33%; }
-    .sectionContacto form, .seccionContactoIndex form {
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      width: 100vh; }
-      .sectionContacto form fieldset, .seccionContactoIndex form fieldset {
-        width: 50vh; }
-        .sectionContacto form fieldset textarea, .seccionContactoIndex form fieldset textarea {
-          height: 35vh;
-          width: 90vh; }
-  .divImagenes {
-    flex-direction: row;
-    flex-wrap: wrap; }
-    .divImagenes img {
-      margin-top: 14px; } }
+@media only screen and (min-width: 1215px) {
+  .sectionContacto form fieldset textarea, .seccionContactoIndex form fieldset textarea {
+    width: 90vh; } }
 
 .bodyuno {
   margin: 0; }
