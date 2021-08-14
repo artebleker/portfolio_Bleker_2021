@@ -10,6 +10,7 @@ h1 {
 h2 {
   font-size: 1.6rem;
   font-family: 'Ubuntu', sans-serif;
+  font-weight: bold;
   color: #284d4e; }
 
 h5 {
@@ -19,12 +20,12 @@ h5 {
 
 ol, label {
   font-size: 1.1rem;
-  font-family: 'Noto Sans KR', sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: #284d4e; }
 
 li, input {
   font-size: 0.9rem;
-  font-family: 'Noto Sans KR', sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: #346466; }
 
 a {
@@ -34,7 +35,7 @@ a {
 
 p {
   font-size: 1.2rem;
-  font-family: 'Noto Sans KR', sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: #284d4e; }
 
 @media only screen and (min-width: 768px) {
@@ -114,6 +115,9 @@ p {
 @media only screen and (max-width: 768px) {
   .divClassIndex__aside--sombra {
     box-shadow: 0px 0px 12px 6px rgba(0, 0, 0, 0.2), 0px 0px 12px 10px rgba(97, 77, 77, 0.5); } }
+
+.textObras {
+  margin: 7vh 0vh 5vh 0vh; }
 
 #item1 {
   background-image: url("../Media/b-obras/1.jpg");
