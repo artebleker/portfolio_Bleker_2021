@@ -18,9 +18,10 @@
       rel="stylesheet"
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
-    />
-    <!-- Estilo CSS -->
-    <link rel="stylesheet" href="./css/style.css" />
+      />
+      <!-- Estilo CSS -->
+      <link rel="stylesheet" href="./css/styleMinify.css" />
+      
         
 <!-- Google Font -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -149,13 +150,24 @@
         <article class="divClassIndex__article container-fluid">
           <h2>El arte de trabajar en papel</h2>
           <h3>~Clases para todas las edades~</h3>
-          <iframe class="container-fluid"
+          
+          <div id="center">
+
+            <input class="imagenVideo" type="image" src="./Media/a-index/video.jpg" id="playButton"/>
+            </div>
+            
+            <div id="video-player-div" style="display:none;"> 
+
+            <iframe class="container-fluid"
             src="https://www.youtube.com/embed/I_6KnL8DT90"
             title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
-          ></iframe>
+            ></iframe>
+          </div>
+
+
         </article>
       </section>
 
@@ -186,7 +198,20 @@
       <h5>ArteBleker - Todos los derechos reservados - Copyright©</h5>
     </footer>
 
-    <!-- SCRIPT  -->
+
+<!-- Script imagen/video ajax -->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('#playButton').click( function () {
+            $('#center').hide();
+            $('#video-player-div').show();
+        });
+    });
+</script>
+
+    <!-- SCRIPT Bootstrap-->
+    
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
       integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"

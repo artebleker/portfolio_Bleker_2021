@@ -76,6 +76,11 @@ p {
     height: 192px;
     width: 340.8px; }
 
+.imagenVideo {
+  margin-top: 2vh;
+  height: 192px;
+  width: 340.8px; }
+
 @media only screen and (min-width: 768px) {
   .divClassIndex {
     background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0.23), rgba(255, 255, 255, 0.856), rgba(255, 255, 255, 0.318), rgba(255, 255, 255, 0)), linear-gradient(to bottom, rgba(255, 255, 255, 0.014), rgba(255, 255, 255, 0.534), rgba(255, 255, 255, 0.118), rgba(255, 255, 255, 0)), url(../Media/Fondos/dodeca.jpg);
@@ -94,6 +99,9 @@ p {
     width: 746.2px; }
   .divClassIndex__article iframe {
     height: 384px;
+    width: 683.2px; }
+  .imagenVideo {
+    height: 384px;
     width: 683.2px; } }
 
 @media only screen and (min-width: 945px) {
@@ -105,7 +113,11 @@ p {
     .divClassIndex__article iframe {
       padding-top: 2vh;
       height: 480px;
-      width: 854px; } }
+      width: 854px; }
+  .imagenVideo {
+    padding-top: 2vh;
+    height: 480px;
+    width: 854px; } }
 
 @media only screen and (min-width: 1000px) {
   .divClassIndex__main {
